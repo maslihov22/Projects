@@ -1,0 +1,12 @@
+﻿public class Converter{
+private static Dictionary Letters = new Dictionary(){
+{"33.442.552.22.441.551", "A"},
+};
+
+public static ToLetter(string code){
+string letter;
+if(!Letters.TryToGetValue(code, out letter)){
+letter = "Not found";
+}
+return letter;
+}
